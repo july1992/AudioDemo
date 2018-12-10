@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff">
+    <com.vily.audiodemo2.ui.CommonSoundItemView
+        android:id="@+id/pp_sound_item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="56dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/pp_iv_abandon_sound"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/pp_sound_item_view"
+        android:layout_alignTop="@id/pp_sound_item_view"
+        android:src="@drawable/ar_delete_audio"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹框录制"
+        android:visibility="visible"
+        />
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+       android:layout_below="@+id/btn"
+        android:visibility="visible"
+        android:onClick="upload"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:layout_below="@+id/upload"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        android:onClick="play"
+        />
+
+
+</RelativeLayout>
